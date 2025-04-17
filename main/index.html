@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <title>Digital Clock</title>
+  </head>
+  <body>
+    <div
+      class="w-full min-h-[100vh] bg-[linear-gradient(45deg,#08001f,#30197d)]"
+    >
+      <div
+        class="w-[800px] h-[180px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 before:content-'' before:w-[180px] before:h-[180px] before:bg-[#f41b75] before:rounded-[5px] before:absolute before:left-[-50px] before:top-[-50px] before:-z-10 before:content-'' after:w-[180px] after:h-[180px] after:bg-[#419aff] after:rounded-[50%] after:absolute after:right-[-30px] after:bottom-[-50px] after:-z-10"
+      >
+        <div
+          class="w-full h-full bg-[rgba(235,0,255,0.11)] rounded-[10px] flex items-center justify-center backdrop-blur-3xl"
+        >
+          <span
+            id="hrs"
+            class="text-[80px] w-[110px] inline-block text-center relative text-white after:content-['HOURS'] after:absolute after:bottom-[-5px] after:left-1/2 after:-translate-x-1/2 after:text-[14px] after:text-white after:whitespace-nowrap"
+          >
+            00
+          </span>
+          <span
+            class="text-[80px] w-[110px] inline-block text-center relative text-white"
+          >
+            :
+          </span>
+          <span
+            id="mins"
+            class="text-[80px] w-[110px] inline-block text-center relative text-white after:content-['MINS'] after:absolute after:bottom-[-5px] after:left-1/2 after:-translate-x-1/2 after:text-[14px] after:text-white after:whitespace-nowrap"
+          >
+            00
+          </span>
+          <span
+            class="text-[80px] w-[110px] inline-block text-center relative text-white"
+          >
+            :
+          </span>
+          <span
+            id="sec"
+            class="text-[80px] w-[110px] inline-block text-center relative text-white after:content-['SEC'] after:absolute after:bottom-[-5px] after:left-1/2 after:-translate-x-1/2 after:text-[14px] after:text-white after:whitespace-nowrap"
+          >
+            00
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
